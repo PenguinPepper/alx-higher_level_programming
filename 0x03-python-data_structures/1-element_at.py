@@ -4,6 +4,6 @@ def element_at(my_list, idx):
     if idx < 0:
         return ("None")
     elif idx >= list_length:
-        return ("None")
+        return ("None".format())
     else:
         return ("{:d}".format(my_list[idx]))
