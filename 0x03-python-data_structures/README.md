@@ -1,0 +1,2 @@
+# 0x03. Python - Data Structures: Lists, Tuples
+This directory cotaims the files for the ALX Data Structures: Lists, Tuples in Python project. The Python files were interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.10) using pycodestyle version 2.8.* code guidlines. The C files were interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.10) following the bettystyle code guidelines.
