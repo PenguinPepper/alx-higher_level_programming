@@ -2,10 +2,8 @@
 """
 Module named square that defines a square
 """
-class Square():
-
+class Square:
     """
     Empty class definition of Square
     """
     pass
-
