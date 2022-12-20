@@ -3,6 +3,7 @@
 Module named square that defines a square
 """
 class Square():
+
     """
     Empty class definition of Square
     """
