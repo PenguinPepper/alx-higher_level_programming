@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
-    capital = str
-    print("{:S}".format(capital))
+    upper_case = str.capitalize()
+    print("{:s}".format(upper_case))
+    return (1)
+
+uppercase("Some Thing")
