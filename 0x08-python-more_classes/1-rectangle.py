@@ -9,14 +9,15 @@ class Rectangle:
         '''Initialises height and width of Rectangle
 
         Args:
-            width(int): width of rectangle
-            height(int): height of rectangle
+            width (int): width of rectangle
+            height (int): height of rectangle
         '''
         self.__height = height
         self.__width = width
 
     @property
     def height(self):
+        '''Get & set heigh of rectangle'''
         return self.__height
 
     @height.setter
@@ -29,6 +30,7 @@ class Rectangle:
 
     @property
     def width(self):
+        '''Get and set width of rectangle'''
         return self.__width
 
     @width.setter
