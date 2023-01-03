@@ -17,11 +17,6 @@ class Rectangle:
 
     @property
     def height(self):
-        '''height: returns the height of the square
-
-        @height.setter:
-            value: ensures that height > 0 and is an integer
-        '''
         return self.__height
 
     @height.setter
@@ -34,11 +29,6 @@ class Rectangle:
 
     @property
     def width(self):
-        '''width: returns the width of rectangle
-
-        @width.setter:
-            value: ensures width is > 0 and an integer
-        '''
         return self.__width
 
     @width.setter
