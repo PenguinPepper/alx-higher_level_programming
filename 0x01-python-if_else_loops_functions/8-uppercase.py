@@ -4,4 +4,4 @@ def uppercase(string):
     for i in string:
         values = i.capitalize()
         empt_str += values
-    print(empt_str)
+    print("{}".format(empt_str))
