@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''This module contains a dunction called add_integer'''
+
+
 def add_integer(a, b=98):
     '''Function that adds two integers a and b
 
@@ -14,6 +16,10 @@ def add_integer(a, b=98):
         raise TypeError('a must be an integer')
     if type(b) not in [int, float]:
         raise TypeError('b must be an integer')
+    if math.isnan(a):
+        raise TypeError('b must be an integer')
+    if math.isnan(b):
+        raise ValueError('b must be an integer')
     else:
         a = int(a)
         b = int(b)

@@ -6,6 +6,7 @@ print(add_integer(100, -2))
 print(add_integer(2))
 print(add_integer(100, -2))
 print(add_integer(100.3, 90.12))
+print(add_integer(100.3, float('nan')))
 try:
     print(add_integer(4, "School"))
 except Exception as e:
