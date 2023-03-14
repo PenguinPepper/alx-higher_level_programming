@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const num = parseInt(process.argv[2]);
-let i, j;
-let letter = 'X';
+let i;
+const letter = 'X';
 if (isNaN(num)) {
   console.log('Missing size');
 } else {
