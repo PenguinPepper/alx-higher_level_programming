@@ -1,8 +1,6 @@
 #!/usr/bin/node
 exports.nbOccurences = function (list, searchElement) {
   let num = 0;
-  if (list.contains(searchElement)) {
-    num++;
-  }
+  list.forEach((item) => (item === searchElement && num++));
   return num;
 }
