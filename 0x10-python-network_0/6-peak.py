@@ -7,6 +7,7 @@ Function that finds a peak in an unsorted list
 def find_peak(list_of_integers):
     """
     Function that finds the peak in an unsorted array
+    """
 
     maxi = 0
     for i in range(len(list_of_integers)):
@@ -17,11 +18,15 @@ def find_peak(list_of_integers):
     return maxi
     """
     mid= len(list_of_integers) // 2
-    if not list_of_integers:
+    my_list = list_of_integers
+    if not my_list:
         return None
-    if list_of_integers[mid] > list_of_integers[mid + 1] and list_of_integers[mid] > list_of_integers[mid - 1]:
+    if my_list[mid] > my_list[mid + 1] and my_list[mid] > my_list[mid - 1]:
         return list_of_integers[mid]
-    elif list_of_integers[mid] < list_of_integers[mid + 1] and list_of_integers[mid] > list_of_integers[mid - 1]:
-        return list_of_integers[mid + 1]
+    elif my_list[mid] < my_list[mid + 1] and my_list[mid] > my_list[mid - 1]:
+        return my_list[mid + 1]
+    elif my_list[mid] > my_list[mid + 1] and my_list[mid] < my_list[mid - 1]:
+        return my_list[mid- 1]
     else:
-        return max(list_of_integers)
+        return max(my_list)
+    """
