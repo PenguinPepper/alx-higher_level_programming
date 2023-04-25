@@ -10,7 +10,7 @@ if __name__ == "__main__":
         # vy = response.url()
         restype = type(response.read())
         print(f"""Body response:""")
-        print(f"    -type: {restype}")
-        print(f"    -content: {cod}")
+        print(f"    - type: {restype}")
+        print(f"    - content: {cod}")
         if response.headers.get_content_charset() == 'utf-8':
-            print(f"    -utf-8 content: OK")
+            print(f"    - utf-8 content: OK")
