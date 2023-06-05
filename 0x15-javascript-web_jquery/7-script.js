@@ -4,4 +4,5 @@ $(function ()
 	$.get(url, funtion(data, textstatus)
 	{
 		$("DIV#character").html(`<div id="character">${data.name}</div>`);
+	});
 });
