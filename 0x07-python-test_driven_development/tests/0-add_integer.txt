@@ -28,10 +28,22 @@ Floats and Integers
 	>>> add_integer(100.3, -2)
 	98
 
+NaN float and integer
+=====================
+	>>> add_integer(float("NaN"), -2)
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
 Floats and Floats
 =================
 	>>> add_integer(95.6, 95.8)
 	190
+
+Float overflow
+==============
+	>>> add_integer(float("inf"), 98)
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
 
 String
 ======
