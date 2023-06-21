@@ -5,7 +5,7 @@
 def is_same_class(obj, a_class):
     """Function tat checks whether an onbject is
     exactly an instance of a class or not
- 
+
     Args:
         obj (object): object to be checked
         a_class (class): class pbject to be comapred to obj
