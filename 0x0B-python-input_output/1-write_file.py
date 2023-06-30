@@ -1,4 +1,4 @@
-#!/us/bin/python3
+#!/usr/bin/python3
 """Module contains a function that writes a file"""
 
 
