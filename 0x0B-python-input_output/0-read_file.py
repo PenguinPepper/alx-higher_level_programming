@@ -7,5 +7,6 @@ def read_file(filename=""):
     Args:
         filename(str): file to be opened
     """
-    with open(filename, encoding="UTF-8") as f:
-        print(f.read())
+    with open(filename, encoding="utf-8", newline=None) as f:
+        text = f.read()
+    print(text, end="")
