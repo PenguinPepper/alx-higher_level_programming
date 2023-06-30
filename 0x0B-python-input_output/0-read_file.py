@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """"Module contains function that opens a file"""
 
+
 def read_file(filename=""):
     """Function opens a file
 
