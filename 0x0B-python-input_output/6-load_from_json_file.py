@@ -12,4 +12,4 @@ def load_from_json_file(filename):
         filename(file): file to deserealise
     """
     with open(filename, mode='r', encoding='utf-8') as f:
-        json.load(f)
+        return json.load(f)
