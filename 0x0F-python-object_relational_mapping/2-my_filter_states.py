@@ -10,9 +10,9 @@ if __name__ == "__main__":
     databse = MySQLdb.connect(host="localhost", user=sys.argv[1],
                               passwd=sys.argv[2], db=sys.argv[3])
     cur = databse.cursor()
-    word = f"{sys.argv[4]}"
-    cur.execute(f"SELECT * FROM states WHERE name \
-            LIKE BINARY '{word}' ORDER BY states.id ASC")
+    word = "{}".format(sys.argv[4])
+    cur.execute("SELECT * FROM states WHERE name \
+            LIKE BINARY '{}' ORDER BY states.id ASC".format(word))
     rows = cur.fetchall()
     for i in rows:
         print(i)
