@@ -10,7 +10,8 @@ if __name__ == "__main__":
     databse = MySQLdb.connect(host="localhost", user=sys.argv[1],
                               passwd=sys.argv[2], db=sys.argv[3])
     cur = databse.cursor()
-    sqcmd = "SELECT * FROM states WHERE name LIKE 'N_' ORDER BY states.id ASC"
+    variable = 'N'
+    sqcmd = f"SELECT * FROM states WHERE name LIKE '{variable}%' ORDER BY states.id ASC"
     cur.execute(sqcmd)
     rows = cur.fetchall()
     for i in rows:
