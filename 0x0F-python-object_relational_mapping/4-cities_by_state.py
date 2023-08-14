@@ -9,7 +9,7 @@ if __name__ == "__main__":
     databse = MySQLdb.connect(host="localhost", user=sys.argv[1],
                               passwd=sys.argv[2], db=sys.argv[3])
     cur = databse.cursor()
-    cmd = "SELECT * FROM cities ORDER BY cities.id ASC"
+    cmd = "SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC"
     cur.execute(cmd)
     rows = cur.fetchall()
     for i in rows:
