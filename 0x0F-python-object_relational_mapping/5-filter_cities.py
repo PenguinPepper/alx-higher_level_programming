@@ -16,8 +16,10 @@ if __name__ == "__main__":
             INNER JOIN states on cities.state_id = states.id \
             WHERE states.name LIKE BINARY %s ORDER BY cities.id ASC"
     cur.execute(cmd, (sys.argv[4],))
-    rows = cur.fetchall()
-    for i in rows:
-        print(i)
+    rows = cur.fetchone()
+    if rows is None:
+        print('')
+    else:
+        print(rows)
     cur.close()
     databse.close()
